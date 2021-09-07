@@ -54,12 +54,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPrice"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPicture"
+        tools:text="@string/title" />
 
     <TextView
         android:id="@+id/txtDescription"
@@ -68,16 +69,40 @@
         android:layout_marginBottom="16dp"
         android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txtTitle"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
         app:layout_constraintStart_toStartOf="@+id/txtTitle"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:text="@string/description" />
 
     <TextView
         android:id="@+id/txtSoldQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        tools:text="@string/soldQuantity"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/txtTitle"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        tools:text="@string/price" />
+
+    <TextView
+        android:id="@+id/txtSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSoldQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/txtSoldQuantity"
+        tools:text="@string/sold" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

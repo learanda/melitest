@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var txtTitle: TextView
     lateinit var txtDescription: TextView
     lateinit var txtSoldQuantity: TextView
+    lateinit var txtPrice: TextView
     lateinit var ivPicture: ImageView
     lateinit var btnSearch: Button
     lateinit var txtItemId: EditText
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         txtTitle = findViewById(R.id.txtTitle)
         txtDescription = findViewById(R.id.txtDescription)
         txtSoldQuantity = findViewById(R.id.txtSoldQuantity)
+        txtPrice = findViewById(R.id.txtPrice)
         ivPicture = findViewById(R.id.ivPicture)
         btnSearch = findViewById(R.id.btnSearch)
         txtItemId = findViewById(R.id.txtItemId)
@@ -55,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                     response.body()!!.apply {
                         txtTitle.text = this.title
                         txtSoldQuantity.text = this.soldQuantity.toString()
+                        txtPrice.text = this.price.toString()
 
                         Picasso.get()
                             .load(this.pictures[0].secureUrl)

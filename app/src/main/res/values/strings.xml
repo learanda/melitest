@@ -2,4 +2,9 @@
     <string name="app_name">melitest</string>
     <string name="write_id">Ingrese ID</string>
     <string name="buscar">Buscar</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
+    <string name="soldQuantity">Cant.</string>
+    <string name="price">Precio</string>
+    <string name="sold">Vendidos</string>
 </resources>
