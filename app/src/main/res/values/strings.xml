@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">melitest</string>
+    <string name="write_id">Ingrese ID</string>
+    <string name="buscar">Buscar</string>
+</resources>
